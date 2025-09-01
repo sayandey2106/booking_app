@@ -5,11 +5,11 @@ default: &default
 
 development:
   <<: *default
-  url: postgresql://postgres:postgres@localhost:5432/booking_app?encoding=utf8&pool=5&timeout=5000
+  url: postgresql://username:passowrd@localhost:5432/db?encoding=utf8&pool=5&timeout=5000
 
 test:
   <<: *default
-  url: postgresql://postgres:postgres@localhost:5432/booking_app_test?encoding=utf8&pool=5&timeout=5000
+  url: postgresql://username:passowrd@localhost:5432/db_test?encoding=utf8&pool=5&timeout=5000
 
 production:
   <<: *default

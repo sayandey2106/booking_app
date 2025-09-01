@@ -4,6 +4,6 @@
 #
 # Example:
 #
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+  ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
+    Movie.find_or_create_by!(title: genre_name, language: "English", duration: 120, user_id: 1)
+  end
